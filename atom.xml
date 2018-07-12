@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wkmian.github.io/"/>
-  <updated>2018-06-26T07:32:30.413Z</updated>
+  <updated>2018-07-12T09:02:31.108Z</updated>
   <id>https://wkmian.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java定时器Timer</title>
+    <link href="https://wkmian.github.io/2018/07/12/java-timer/"/>
+    <id>https://wkmian.github.io/2018/07/12/java-timer/</id>
+    <published>2018-07-12T07:51:14.000Z</published>
+    <updated>2018-07-12T09:02:31.108Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天来聊一聊Java原生的定时器Timer</p><h4 id="添加定时任务"><a href="#添加定时任务" class="headerlink" title="添加定时任务"></a>添加定时任务</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public void schedule(TimerTask task, long delay) ;</span><br><span class="line">public void schedule(TimerTask task, Date time);</span><br><span class="line">public void schedule(TimerTask task, long delay, long period);</span><br><span class="line">public void schedule(TimerTask task, Date firstTime, long period);</span><br><span class="line">public void scheduleAtFixedRate(TimerTask task, long delay, long period);</span><br><span class="line">public void scheduleAtFixedRate(TimerTask task, Date firstTime,long period);</span><br></pre></td></tr></table></figure><p>Timer添加定时任务有这六种方式，但其本质上都是调用下面的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * @param task 执行任务</span><br><span class="line"> * @param time 时间戳</span><br><span class="line"> * @param period 延迟毫秒数 大于0小于0区分是 schedule 还是 scheduleAtFixedRate</span><br><span class="line"> */</span><br><span class="line">private void sched(TimerTask task, long time, long period);</span><br></pre></td></tr></table></figure></p><hr><h4 id="schedule-与-scheduleAtFixedRate-的区别："><a href="#schedule-与-scheduleAtFixedRate-的区别：" class="headerlink" title="schedule 与 scheduleAtFixedRate 的区别："></a>schedule 与 scheduleAtFixedRate 的区别：</h4><ul><li>schedule 是按照上次任务执行完成的时间点延迟执行，单个任务的执行时长会影响下次任务的执行开始时间。</li><li>scheduleAtFixedRate 是按照上次任务的开始时间点计算下次任务的开始时间点，当单个任务执行时间过长会产生并发的问题。</li></ul><hr><h4 id="cancel"><a href="#cancel" class="headerlink" title="cancel()"></a>cancel()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public void cancel()</span><br></pre></td></tr></table></figure><p>将该定时器内的所有任务全部清空</p><hr><h4 id="purge"><a href="#purge" class="headerlink" title="purge()"></a>purge()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public int purge()</span><br></pre></td></tr></table></figure><p>将该定时器中的定时任务为 TimerTask.CANCELLED 的TimerTask移出定时器并返回移出数量</p><hr><h4 id="最后说明"><a href="#最后说明" class="headerlink" title="最后说明"></a>最后说明</h4><p>如果TimerTask的首次执行时间小于当前时间会立即执行一次，并不会延迟到下次执行。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天来聊一聊Java原生的定时器Timer&lt;/p&gt;
+&lt;h4 id=&quot;添加定时任务&quot;&gt;&lt;a href=&quot;#添加定时任务&quot; class=&quot;headerlink&quot; title=&quot;添加定时任务&quot;&gt;&lt;/a&gt;添加定时任务&lt;/h4&gt;&lt;figure class=&quot;highlight pla
+      
+    
+    </summary>
+    
+    
+      <category term="java" scheme="https://wkmian.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux命令</title>
+    <link href="https://wkmian.github.io/2018/07/03/linux-command/"/>
+    <id>https://wkmian.github.io/2018/07/03/linux-command/</id>
+    <published>2018-07-03T03:04:06.000Z</published>
+    <updated>2018-07-12T07:53:33.162Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://wkmian.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第一个博客</title>
-    <link href="https://wkmian.github.io/2018/06/26/the-first-blog/"/>
-    <id>https://wkmian.github.io/2018/06/26/the-first-blog/</id>
+    <link href="https://wkmian.github.io/2018/06/26/first-blog/"/>
+    <id>https://wkmian.github.io/2018/06/26/first-blog/</id>
     <published>2018-06-26T07:29:34.000Z</published>
-    <updated>2018-06-26T07:32:30.413Z</updated>
+    <updated>2018-07-12T07:53:33.662Z</updated>
     
     <content type="html"><![CDATA[<p>这个是我的第一个博客</p>]]></content>
     
