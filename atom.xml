@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wkmian.github.io/"/>
-  <updated>2018-07-19T02:13:03.853Z</updated>
+  <updated>2018-07-19T04:10:07.941Z</updated>
   <id>https://wkmian.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wkmian.github.io/2018/07/19/binary-operation/"/>
     <id>https://wkmian.github.io/2018/07/19/binary-operation/</id>
     <published>2018-07-19T01:56:09.000Z</published>
-    <updated>2018-07-19T02:13:03.853Z</updated>
+    <updated>2018-07-19T04:10:07.941Z</updated>
     
     <content type="html"><![CDATA[<h3 id="二进制运算"><a href="#二进制运算" class="headerlink" title="二进制运算"></a>二进制运算</h3><ul><li><p>&amp; 与运算<br>n位都是1得1，否则得0</p></li><li><p>| 或运算<br>n位都是0得0，否则得1</p></li><li><p>^ 异或预算<br>n位相同得0，否则得1</p></li><li><p>~ 非运算（一元运算符）<br>0变1,1变0</p></li><li><p>&lt;&lt; 左移<br>向左移动，低位补0</p></li><li><p>>> 右移<br>向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0</p></li><li><p>>>> 无符号右移<br>同右移，但最高位统一补0</p></li></ul><h4 id="位移注意点："><a href="#位移注意点：" class="headerlink" title="位移注意点："></a>位移注意点：</h4><p>位移时如果位移位数大于数据类型长度，会先将位移位数取模计算，否则将产生无意义元算</p><h4 id="源码，反码，补码"><a href="#源码，反码，补码" class="headerlink" title="源码，反码，补码"></a>源码，反码，补码</h4><p>正整数的原码，反码，补码都是本身<br>原码：原码就是符号位加上真值的绝对值。<br>反码：保留符号位，其余取反<br>补码：反码+1  </p>]]></content>
     
