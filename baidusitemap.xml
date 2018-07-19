@@ -4,14 +4,69 @@
 
     
   <url>
-    <loc>https://wkmian.github.io/2018/07/12/java-timer/</loc>
-    <lastmod>2018-07-12T09:02:31.108Z</lastmod>
+    <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
+    <lastmod>2018-07-19T02:13:03.853Z</lastmod>
     <data>
         <display>
-        <title>java定时器Timer</title>
-        <pubTime>2018-07-12T07:51:14.000Z</pubTime>
+        <title>二进制运算</title>
+        <pubTime>2018-07-19T01:56:09.000Z</pubTime>
         
-        <tag>java</tag>
+        <tag>二进制，算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/06/26/first-blog/</loc>
+    <lastmod>2018-07-17T07:02:41.518Z</lastmod>
+    <data>
+        <display>
+        <title>第一个博客</title>
+        <pubTime>2018-06-26T07:29:34.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/07/17/summary-of-algorithm-questions/</loc>
+    <lastmod>2018-07-17T06:24:38.519Z</lastmod>
+    <data>
+        <display>
+        <title>算法题总结</title>
+        <pubTime>2018-07-17T06:22:55.000Z</pubTime>
+        
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
+    <lastmod>2018-07-17T06:24:38.326Z</lastmod>
+    <data>
+        <display>
+        <title>log4j2使用总结</title>
+        <pubTime>2018-07-17T01:44:10.000Z</pubTime>
+        
+        <tag>java,log,log4j2</tag>
          
          
            
@@ -21,15 +76,20 @@
 
     
   <url>
-    <loc>https://wkmian.github.io/2018/06/26/first-blog/</loc>
-    <lastmod>2018-07-12T07:53:33.662Z</lastmod>
+    <loc>https://wkmian.github.io/2018/07/12/java-timer/</loc>
+    <lastmod>2018-07-17T06:23:42.599Z</lastmod>
     <data>
         <display>
-        <title>第一个博客</title>
-        <pubTime>2018-06-26T07:29:34.000Z</pubTime>
+        <title>java定时器Timer</title>
+        <pubTime>2018-07-12T07:51:14.000Z</pubTime>
         
+        <tag>java</tag>
+         
          
            
+             
+              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
         </display>
     </data>
     </url>
