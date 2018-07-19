@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
+    <lastmod>2018-07-19T06:29:47.674Z</lastmod>
+    <data>
+        <display>
+        <title>log4j2使用总结</title>
+        <pubTime>2018-07-17T01:44:10.000Z</pubTime>
+        
+        <tag>java,log,log4j2</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
     <lastmod>2018-07-19T04:10:07.941Z</lastmod>
     <data>
@@ -53,23 +70,6 @@
              
               <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
-    <lastmod>2018-07-17T06:24:38.326Z</lastmod>
-    <data>
-        <display>
-        <title>log4j2使用总结</title>
-        <pubTime>2018-07-17T01:44:10.000Z</pubTime>
-        
-        <tag>java,log,log4j2</tag>
-         
-         
-           
         </display>
     </data>
     </url>
