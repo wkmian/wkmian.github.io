@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
+    <lastmod>2018-07-24T03:02:07.972Z</lastmod>
+    <data>
+        <display>
+        <title>二进制运算</title>
+        <pubTime>2018-07-19T01:56:09.000Z</pubTime>
+        
+        <tag>二进制</tag>
+         
+        <tag>算法</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
     <lastmod>2018-07-24T03:00:35.055Z</lastmod>
     <data>
@@ -19,26 +41,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
-    <lastmod>2018-07-24T02:57:25.190Z</lastmod>
-    <data>
-        <display>
-        <title>二进制运算</title>
-        <pubTime>2018-07-19T01:56:09.000Z</pubTime>
-        
-        <tag>二进制 算法</tag>
-         
-         
-           
-             
-              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
-          
         </display>
     </data>
     </url>
