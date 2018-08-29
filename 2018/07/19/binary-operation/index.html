@@ -18,18 +18,18 @@
   
   
   <title>二进制运算 | wkmian的博客</title>
-  <meta name="description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
+  <meta name="description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456789100 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，1.相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算2.异或满足结合律和交换律  ~ 非运算（一元运算">
 <meta name="keywords" content="二进制,算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二进制运算">
 <meta property="og:url" content="https://wkmian.github.io/2018/07/19/binary-operation/index.html">
 <meta property="og:site_name" content="wkmian的博客">
-<meta property="og:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
+<meta property="og:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456789100 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，1.相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算2.异或满足结合律和交换律  ~ 非运算（一元运算">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-29T06:41:31.928Z">
+<meta property="og:updated_time" content="2018-08-29T06:44:33.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二进制运算">
-<meta name="twitter:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
+<meta name="twitter:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456789100 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，1.相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算2.异或满足结合律和交换律  ~ 非运算（一元运算">
   <!-- Canonical links -->
   <link rel="canonical" href="https://wkmian.github.io/2018/07/19/binary-operation/index.html">
   
@@ -343,7 +343,7 @@
 <li><p>| 或运算<br>n位都是0得0，否则得1</p>
 </li>
 <li><p>^ 异或预算<br>n位相同得0，否则得1</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">0 ^ 0 = 0</span><br><span class="line">0 ^ 1 = 1</span><br><span class="line">1 ^ 1 = 0</span><br><span class="line">1 ^ 0 = 1</span><br><span class="line">且有</span><br><span class="line">X ^ X = 0</span><br><span class="line">X ^ 0 = X</span><br><span class="line">根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">0 ^ 0 = 0</span><br><span class="line">0 ^ 1 = 1</span><br><span class="line">1 ^ 1 = 0</span><br><span class="line">1 ^ 0 = 1</span><br><span class="line">且有</span><br><span class="line">X ^ X = 0</span><br><span class="line">X ^ 0 = X</span><br><span class="line">根据这两个性质可以得出，</span><br><span class="line">1.相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算</span><br><span class="line">2.异或满足结合律和交换律</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>~ 非运算（一元运算符）<br>0变1,1变0</p>
 </li>

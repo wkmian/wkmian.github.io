@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wkmian.github.io/"/>
-  <updated>2018-08-08T06:35:53.596Z</updated>
+  <updated>2018-08-29T06:41:57.786Z</updated>
   <id>https://wkmian.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wkmian.github.io/2018/08/08/red-black-tree/"/>
     <id>https://wkmian.github.io/2018/08/08/red-black-tree/</id>
     <published>2018-08-08T06:13:27.000Z</published>
-    <updated>2018-08-08T06:35:53.596Z</updated>
+    <updated>2018-08-29T06:41:57.786Z</updated>
     
     <content type="html"><![CDATA[<p>红黑树是平衡二叉树的一种</p>]]></content>
     
@@ -45,7 +45,7 @@
     <link href="https://wkmian.github.io/2018/07/25/mysql/"/>
     <id>https://wkmian.github.io/2018/07/25/mysql/</id>
     <published>2018-07-25T07:04:11.000Z</published>
-    <updated>2018-07-25T07:06:22.570Z</updated>
+    <updated>2018-08-29T06:41:57.647Z</updated>
     
     <content type="html"><![CDATA[<p>查看事务运行情况（行锁）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from information_schema.innodb_trx\G</span><br></pre></td></tr></table></figure></p><p>trx_mysql_thread_id 为线程id 可以使用kill杀死线程</p>]]></content>
     
@@ -70,9 +70,9 @@
     <link href="https://wkmian.github.io/2018/07/19/binary-operation/"/>
     <id>https://wkmian.github.io/2018/07/19/binary-operation/</id>
     <published>2018-07-19T01:56:09.000Z</published>
-    <updated>2018-08-29T06:41:31.928Z</updated>
+    <updated>2018-08-29T06:44:33.956Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="二进制运算"><a href="#二进制运算" class="headerlink" title="二进制运算"></a>二进制运算</h3><ul><li><p>&amp; 与运算<br>n位都是1得1，否则得0</p></li><li><p>| 或运算<br>n位都是0得0，否则得1</p></li><li><p>^ 异或预算<br>n位相同得0，否则得1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">0 ^ 0 = 0</span><br><span class="line">0 ^ 1 = 1</span><br><span class="line">1 ^ 1 = 0</span><br><span class="line">1 ^ 0 = 1</span><br><span class="line">且有</span><br><span class="line">X ^ X = 0</span><br><span class="line">X ^ 0 = X</span><br><span class="line">根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算</span><br></pre></td></tr></table></figure></li><li><p>~ 非运算（一元运算符）<br>0变1,1变0</p></li><li><p>&lt;&lt; 左移<br>向左移动，低位补0</p></li><li><p>>> 右移<br>向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0</p></li><li><p>>>> 无符号右移<br>同右移，但最高位统一补0</p></li></ul><h4 id="位移注意点："><a href="#位移注意点：" class="headerlink" title="位移注意点："></a>位移注意点：</h4><p>位移时如果位移位数大于数据类型长度，会先将位移位数取模计算，否则将产生无意义元算</p><h4 id="源码，反码，补码"><a href="#源码，反码，补码" class="headerlink" title="源码，反码，补码"></a>源码，反码，补码</h4><p>正整数的原码，反码，补码都是本身<br>原码：原码就是符号位加上真值的绝对值。<br>反码：保留符号位，其余取反<br>补码：反码+1  </p>]]></content>
+    <content type="html"><![CDATA[<h3 id="二进制运算"><a href="#二进制运算" class="headerlink" title="二进制运算"></a>二进制运算</h3><ul><li><p>&amp; 与运算<br>n位都是1得1，否则得0</p></li><li><p>| 或运算<br>n位都是0得0，否则得1</p></li><li><p>^ 异或预算<br>n位相同得0，否则得1</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">0 ^ 0 = 0</span><br><span class="line">0 ^ 1 = 1</span><br><span class="line">1 ^ 1 = 0</span><br><span class="line">1 ^ 0 = 1</span><br><span class="line">且有</span><br><span class="line">X ^ X = 0</span><br><span class="line">X ^ 0 = X</span><br><span class="line">根据这两个性质可以得出，</span><br><span class="line">1.相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算</span><br><span class="line">2.异或满足结合律和交换律</span><br></pre></td></tr></table></figure></li><li><p>~ 非运算（一元运算符）<br>0变1,1变0</p></li><li><p>&lt;&lt; 左移<br>向左移动，低位补0</p></li><li><p>>> 右移<br>向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0</p></li><li><p>>>> 无符号右移<br>同右移，但最高位统一补0</p></li></ul><h4 id="位移注意点："><a href="#位移注意点：" class="headerlink" title="位移注意点："></a>位移注意点：</h4><p>位移时如果位移位数大于数据类型长度，会先将位移位数取模计算，否则将产生无意义元算</p><h4 id="源码，反码，补码"><a href="#源码，反码，补码" class="headerlink" title="源码，反码，补码"></a>源码，反码，补码</h4><p>正整数的原码，反码，补码都是本身<br>原码：原码就是符号位加上真值的绝对值。<br>反码：保留符号位，其余取反<br>补码：反码+1  </p>]]></content>
     
     <summary type="html">
     
