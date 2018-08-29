@@ -18,18 +18,18 @@
   
   
   <title>二进制运算 | wkmian的博客</title>
-  <meta name="description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt; 左移向左移动，低位补0  &amp;gt;&amp;gt; 右移向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0  &amp;gt;&amp;gt;&amp;gt; 无符号右移同右移，但最高位统一补0   位移注意点：位移时如果位移位数大于数据类型长度，会先将位">
+  <meta name="description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
 <meta name="keywords" content="二进制,算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二进制运算">
 <meta property="og:url" content="https://wkmian.github.io/2018/07/19/binary-operation/index.html">
 <meta property="og:site_name" content="wkmian的博客">
-<meta property="og:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt; 左移向左移动，低位补0  &amp;gt;&amp;gt; 右移向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0  &amp;gt;&amp;gt;&amp;gt; 无符号右移同右移，但最高位统一补0   位移注意点：位移时如果位移位数大于数据类型长度，会先将位">
+<meta property="og:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-24T03:02:07.972Z">
+<meta property="og:updated_time" content="2018-08-29T06:41:31.928Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二进制运算">
-<meta name="twitter:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt; 左移向左移动，低位补0  &amp;gt;&amp;gt; 右移向右移动n位，最高位补符号位（正数补0，负数补1），其他位补0  &amp;gt;&amp;gt;&amp;gt; 无符号右移同右移，但最高位统一补0   位移注意点：位移时如果位移位数大于数据类型长度，会先将位">
+<meta name="twitter:description" content="二进制运算 &amp;amp; 与运算n位都是1得1，否则得0  | 或运算n位都是0得0，否则得1  ^ 异或预算n位相同得0，否则得1 123456780 ^ 0 = 00 ^ 1 = 11 ^ 1 = 01 ^ 0 = 1且有X ^ X = 0X ^ 0 = X根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算  ~ 非运算（一元运算符）0变1,1变0  &amp;lt;&amp;lt">
   <!-- Canonical links -->
   <link rel="canonical" href="https://wkmian.github.io/2018/07/19/binary-operation/index.html">
   
@@ -168,7 +168,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">3</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -178,7 +178,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/">log</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log4j2/">log4j2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/二进制/">二进制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log/">log</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/log4j2/">log4j2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/二进制/">二进制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -188,7 +188,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/java/" style="font-size: 14px;">java</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/log/" style="font-size: 13px;">log</a> <a href="/tags/log4j2/" style="font-size: 13px;">log4j2</a> <a href="/tags/二进制/" style="font-size: 13px;">二进制</a> <a href="/tags/算法/" style="font-size: 14px;">算法</a>
+      <a href="/tags/java/" style="font-size: 13.5px;">java</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/log/" style="font-size: 13px;">log</a> <a href="/tags/log4j2/" style="font-size: 13px;">log4j2</a> <a href="/tags/mysql/" style="font-size: 13px;">mysql</a> <a href="/tags/二进制/" style="font-size: 13px;">二进制</a> <a href="/tags/算法/" style="font-size: 14px;">算法</a>
     </div>
   </div>
 
@@ -197,7 +197,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -209,6 +209,36 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2018/08/08/red-black-tree/" class="title">红黑树</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-08-08T06:13:27.000Z" itemprop="datePublished">2018-08-08</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/数据库/">数据库</a>
+              </p>
+              <p class="item-title">
+                <a href="/2018/07/25/mysql/" class="title">mysql</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2018-07-25T07:04:11.000Z" itemprop="datePublished">2018-07-25</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -250,36 +280,6 @@
               </p>
               <p class="item-date">
                 <time datetime="2018-07-17T01:44:10.000Z" itemprop="datePublished">2018-07-17</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/编程/">编程</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/07/12/java-timer/" class="title">java定时器Timer</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-07-12T07:51:14.000Z" itemprop="datePublished">2018-07-12</time>
-              </p>
-            </div>
-          </li>
-          
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                
-              </p>
-              <p class="item-title">
-                <a href="/2018/07/03/linux-command/" class="title">linux命令</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-07-03T03:04:06.000Z" itemprop="datePublished">2018-07-03</time>
               </p>
             </div>
           </li>
@@ -343,6 +343,7 @@
 <li><p>| 或运算<br>n位都是0得0，否则得1</p>
 </li>
 <li><p>^ 异或预算<br>n位相同得0，否则得1</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">0 ^ 0 = 0</span><br><span class="line">0 ^ 1 = 1</span><br><span class="line">1 ^ 1 = 0</span><br><span class="line">1 ^ 0 = 1</span><br><span class="line">且有</span><br><span class="line">X ^ X = 0</span><br><span class="line">X ^ 0 = X</span><br><span class="line">根据这两个性质可以得出，相同位上存在偶数个1得0,奇数个1得1,0可以不参与计算</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>~ 非运算（一元运算符）<br>0变1,1变0</p>
 </li>
@@ -407,6 +408,10 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2018/07/25/mysql/" title="mysql"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
     <li class="next">
