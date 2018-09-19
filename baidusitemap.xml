@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://wkmian.github.io/2018/09/10/jdk18-update-feature/</loc>
-    <lastmod>2018-09-19T08:44:29.307Z</lastmod>
+    <lastmod>2018-09-19T08:48:53.215Z</lastmod>
     <data>
         <display>
         <title>JDK1.8更新特性</title>
@@ -88,9 +88,9 @@
         <title>二进制运算</title>
         <pubTime>2018-07-19T01:56:09.000Z</pubTime>
         
-        <tag>算法</tag>
-         
         <tag>二进制</tag>
+         
+        <tag>算法</tag>
          
          
            
