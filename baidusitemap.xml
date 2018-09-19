@@ -4,16 +4,93 @@
 
     
   <url>
+    <loc>https://wkmian.github.io/2018/09/10/jdk18-update-feature/</loc>
+    <lastmod>2018-09-19T08:44:29.307Z</lastmod>
+    <data>
+        <display>
+        <title>JDK1.8更新特性</title>
+        <pubTime>2018-09-10T01:52:18.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>jdk</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/09/19/java-writing-specification/</loc>
+    <lastmod>2018-09-19T05:27:47.815Z</lastmod>
+    <data>
+        <display>
+        <title>java编写规范</title>
+        <pubTime>2018-09-19T05:01:56.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>规范</tag>
+         
+         
+           
+             
+              <breadCrumb title="编程规范" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/09/10/jdk-version-update-feature/</loc>
+    <lastmod>2018-09-11T04:07:52.073Z</lastmod>
+    <data>
+        <display>
+        <title>JDK版本更新特性</title>
+        <pubTime>2018-09-10T01:46:10.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>jdk</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/07/03/linux-command/</loc>
+    <lastmod>2018-09-11T04:07:51.488Z</lastmod>
+    <data>
+        <display>
+        <title>linux命令</title>
+        <pubTime>2018-07-03T03:04:06.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
-    <lastmod>2018-08-29T06:44:33.956Z</lastmod>
+    <lastmod>2018-09-04T06:56:49.391Z</lastmod>
     <data>
         <display>
         <title>二进制运算</title>
         <pubTime>2018-07-19T01:56:09.000Z</pubTime>
         
-        <tag>二进制</tag>
-         
         <tag>算法</tag>
+         
+        <tag>二进制</tag>
          
          
            
@@ -133,23 +210,6 @@
              
               <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/07/03/linux-command/</loc>
-    <lastmod>2018-07-12T07:53:33.162Z</lastmod>
-    <data>
-        <display>
-        <title>linux命令</title>
-        <pubTime>2018-07-03T03:04:06.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-         
-           
         </display>
     </data>
     </url>
