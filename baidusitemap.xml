@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://wkmian.github.io/2018/07/19/binary-operation/</loc>
-    <lastmod>2018-09-19T09:05:22.188Z</lastmod>
+    <lastmod>2018-09-22T06:21:01.424Z</lastmod>
     <data>
         <display>
         <title>二进制运算</title>
@@ -20,6 +20,44 @@
              
               <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/09/19/jdk17-features/</loc>
+    <lastmod>2018-09-19T11:16:31.436Z</lastmod>
+    <data>
+        <display>
+        <title>JDK1.7特性</title>
+        <pubTime>2018-09-19T10:25:15.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>jdk</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2018/09/10/jdk18-features/</loc>
+    <lastmod>2018-09-19T10:26:09.529Z</lastmod>
+    <data>
+        <display>
+        <title>JDK1.8特性</title>
+        <pubTime>2018-09-10T01:52:18.000Z</pubTime>
+        
+        <tag>java</tag>
+         
+        <tag>jdk</tag>
+         
+         
+           
         </display>
     </data>
     </url>
@@ -139,25 +177,6 @@
              
               <breadCrumb title="编程规范" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/09/10/jdk18-update-feature/</loc>
-    <lastmod>2018-09-19T09:03:59.542Z</lastmod>
-    <data>
-        <display>
-        <title>JDK1.8更新特性</title>
-        <pubTime>2018-09-10T01:52:18.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>jdk</tag>
-         
-         
-           
         </display>
     </data>
     </url>
