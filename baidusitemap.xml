@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>https://wkmian.github.io/2019/01/17/single-sign-on/</loc>
+    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
+    <data>
+        <display>
+        <title>单点登录</title>
+        <pubTime>2019-01-17T06:37:55.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wkmian.github.io/2018/06/26/first-blog/</loc>
     <lastmod>2019-01-16T06:22:31.823Z</lastmod>
     <data>
@@ -91,23 +106,6 @@
         <tag>log</tag>
          
         <tag>log4j2</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/08/08/red-black-tree/</loc>
-    <lastmod>2018-09-19T09:04:37.231Z</lastmod>
-    <data>
-        <display>
-        <title>红黑树</title>
-        <pubTime>2018-08-08T06:13:27.000Z</pubTime>
-        
-        <tag>算法</tag>
          
          
            

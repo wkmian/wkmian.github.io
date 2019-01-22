@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://wkmian.github.io/2019/01/17/single-sign-on/</loc>
+    
+    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://wkmian.github.io/2018/06/26/first-blog/</loc>
     
     <lastmod>2019-01-16T06:22:31.823Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
     
     <lastmod>2018-09-19T09:04:57.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://wkmian.github.io/2018/08/08/red-black-tree/</loc>
-    
-    <lastmod>2018-09-19T09:04:37.231Z</lastmod>
     
   </url>
   

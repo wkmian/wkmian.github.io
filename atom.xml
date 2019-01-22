@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wkmian.github.io/"/>
-  <updated>2018-09-22T06:23:35.714Z</updated>
+  <updated>2019-01-22T07:48:04.863Z</updated>
   <id>https://wkmian.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单点登录</title>
+    <link href="https://wkmian.github.io/2019/01/17/single-sign-on/"/>
+    <id>https://wkmian.github.io/2019/01/17/single-sign-on/</id>
+    <published>2019-01-17T06:37:55.000Z</published>
+    <updated>2019-01-22T07:48:04.863Z</updated>
+    
+    <content type="html"><![CDATA[<p>更新于 2019年01月22日</p><p>这里要说的单点登录并非限制用户只在一个设备上登录的单点登录.</p><p>本次将如下介绍单点登录</p><ul><li>概念</li><li>原理</li><li>SSO与OAuth</li><li>总结</li></ul><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>随着企业的发展,用到的系统越来越多,不同模块之间的重复登录,将给用户或者运营人员带来很多不便.由此单点登录就产生了.</p><p>一个系统登录,其他系统自动登录(免登录)的技术就是单点登录.</p><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>在BS架构中,用户输入账号,密码取得服务器的信任,服务器将本次用户的session标记已登录,并将唯一标志写入cookie,每次请求浏览器都会单上cookie(这里不详细的讲解cookie,),到此传统的登录就已经完成了.</p><ul><li><p>同域下的单点登录</p><p>一般来说, 只有一个域名的企业来说,可以通过二级域名来区分不同的系统. 例如 sso.wkmian.com 作为单点登录的域名. 存在两个其他服务, 域名分别是 sys1.wkmian.com , sys2.wkmain.com .</p><p>现在我们只需要在sso.wkmian.com上进行登录并记录登录状态,同时向sso.wkmian.com这个域下写入cookie . 如果此时向要让 sys1.wkmian.com 与 sys2.wkmian.com 都能完成自动登录,则需要解决两个问题.</p><ol><li>我们知道cookie是无法跨域的. 登录的cookie的域属性是 sso.wkmian.com , sys1和sys2 请求的时候是带不上的.</li><li>不同服务器之间的session是独立不共享的,sys1和sys2 是无法获取sso服务器上的session信息.</li></ol><p>针对问题1, 我们可以将sso的cookie设置成顶级域名,即cookie的domain为 wkmian.com . 此时两个sys系统就都可以带上cookie请求. 但是cookie只能设置成自己的子域名或者顶级域名,更多的知识可以查询cookie相关资料.</p><p>针对问题2,我们可以利用其他技术来让不同服务器直接的session进行共享 tomcat的session共享技术甚至可以利用缓存代替.</p><p>到此,同域下的单点登录就完成了. 可以这并不是完美的,如果一个企业是不同的域名呢?</p></li><li><p>不同域下的单点登录</p><p>不同域下就不能使用顶级域名这种技术来实现,原因是cookie不是作用域其他顶级域名下. 这里说一下CAS单点登录流程</p><img src="/2019/01/17/single-sign-on/cas.png" title="CAS流程图"><p>上图是标准的CAS流程,流程分析如下.<br>第一个系统  sys</p><ol><li>用户请求sys系统, 由于sys系统需要登录,但是现在尚未登录.</li><li>跳转到SSO登录系统, 这是用户还是没有登录, 跳转到用户登录页面.</li><li>用户填写正确的账号,密码后, SSO认证成功, SSO服务器记录用户登录状态,写下当前域的cookie,假设cookie为CASTGC</li><li>同时SSO并生成一个ST(Service Ticker),然后重定向到sys系统并带上ST</li><li>sys系统获取ST之后向SSO服务器进行ST验证</li><li>ST有效,sys系统的session记录下登录状态,并设置sys域下的cookie.</li></ol><p>第二个系统  sys2</p><ol><li>用户请求sys2系统,由于sys2也需用登录</li><li>跳转到SSO登录系统,此时SSO域的是存在CASTGC的cookie,SSO认证成功,重新生成一个ST2,然后重定向到sys2的系统,ST2作为参数.</li><li>sys2系统拿到ST2向SSO服务器进行ST2的验证.</li><li>ST2有效,sys2系统的session记录下登录状态,并设置sys2域下的cookie,</li></ol></li></ul><p>  这样sys2系统就不需要重新走一遍登录流程,并且session不共享也没有问题. <strong>关于ST的验证是有必要的,不可以省掉,如果省掉,那么用户完全可以伪造一个用户信息从而实现登录.</strong> 这是非常危险的.</p><p>  到此,不同域的CAS单点登录就介绍完了.  </p><h4 id="OAuth"><a href="#OAuth" class="headerlink" title="OAuth"></a>OAuth</h4><p>  oauth也是可以实现单点登录的,我们先看看oauth的流程. 微信采用oauth2.0协议,我们以微信为例子</p>  <img src="/2019/01/17/single-sign-on/oauth_weixin.png" title="微信授权流程图"><p>  oauth流程要比CAS流程复杂一些,具体分析一下</p><ol><li>用户访问sys系统,sys提示用户登录.</li><li>用户点击微信登录,,跳转到微信登录页面,并带上请求参数appid和backurl. 所有企业都可以与微信对接,所以appid区别是哪个企业. 由微信提供,也就是由OAuth服务提供. 我们与OAuth对接的时候需要在OAuth Servier上注册自己的系统,需要填写应用信息,回调地址等.OAuth会生成appid和appSecret,这两个很重要.</li><li>OAuth根据appid找到sys的注册信息,校验backurl和注册的回调地址是否一致(微信只判断域名是否相同,OAuth可以自己设计),验证失败提示错误信息,成功返回授权页面.</li><li>微信弹出授权页面,用户同意授权之后OAuth会生成这个用户对应的code,通过backurl返回sys系统,并带上参数code. 这里OAuth将设置自己域下的cookie.</li><li>sys得到code之后,带上appid和appSecret参数请求OAuth服务,换区用户token.</li><li>得到token之后,再去OAuah获取用户信息.</li><li><p>sys系统设置session为登录状态,并设置sys域下的cookie</p><h4 id="SSO与OAuth区别"><a href="#SSO与OAuth区别" class="headerlink" title="SSO与OAuth区别"></a>SSO与OAuth区别</h4><p>SSO和OAuth都可以实现单点登录,以下列举一下SSO与OAuth的一些区别</p></li></ol><ul><li>SSO是保障客户端(sys)的资源安全,OAtuh是保障OAuth Server的资源安全</li><li>SSO验证用户有没有权限访问sys服务资源(资源在sys服务上),OAuth是验证OAuth的资源能不能让用户访问(资源在OAuth上).</li><li>OAuth相比SSO多了一步appid和appSecret的验证过程,这两个参数是由双方约定,假设黑客拦截了code, 黑客不知道appid和appSceret所以也无法获取accessToken.</li><li>从信任角度来看,OAuth2.0授权服务端和第三方客户端不属于一个互相信任的应用群（通常都不是同一个公司提供的服务），第三方客户端的用户不属于OAuth2.0授权服务端的官方用户;而单点登录的服务端和接入的客户端都在一个互相信任的应用群（通常是同一个公司提供的服务）,各个子系统的用户属于单点登录服务端的官方用户。</li><li>从资源角度来看。OAuth2.0授权主要是让用户自行决定——“我”在OAuth2.0服务提供方的个人资源是否允许第三方应用访问；而单点登录的资源都在客户端这边，单点登录的服务端主要用于登录，以及管理用户在各个子系统的权限信息。</li><li><p>从流程角度来看。OAuth2.0授权的时候，第三方客户端需要拿预先“商量”好的密码去获取Access Token；而单点登录则不需要。 </p><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>单点登录解决同一个浏览器(<strong>非两个浏览器</strong>)之间的频繁登录的问题,且以上模式都只适合B/S架构,C/S架构需要自己调整技术方案(解决cookie的问题).</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;更新于 2019年01月22日&lt;/p&gt;
+&lt;p&gt;这里要说的单点登录并非限制用户只在一个设备上登录的单点登录.&lt;/p&gt;
+&lt;p&gt;本次将如下介绍单点登录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;概念&lt;/li&gt;
+&lt;li&gt;原理&lt;/li&gt;
+&lt;li&gt;SSO与OAuth&lt;/li&gt;
+&lt;li&gt;总结&lt;/li&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>JDK1.7特性</title>
@@ -128,30 +157,6 @@
       <category term="java" scheme="https://wkmian.github.io/tags/java/"/>
     
       <category term="jdk" scheme="https://wkmian.github.io/tags/jdk/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>红黑树</title>
-    <link href="https://wkmian.github.io/2018/08/08/red-black-tree/"/>
-    <id>https://wkmian.github.io/2018/08/08/red-black-tree/</id>
-    <published>2018-08-08T06:13:27.000Z</published>
-    <updated>2018-09-19T09:04:37.231Z</updated>
-    
-    <content type="html"><![CDATA[<p>红黑树是平衡二叉树的一种</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;红黑树是平衡二叉树的一种&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="https://wkmian.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
