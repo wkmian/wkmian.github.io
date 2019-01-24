@@ -19,21 +19,6 @@
 
     
   <url>
-    <loc>https://wkmian.github.io/2018/06/26/first-blog/</loc>
-    <lastmod>2019-01-16T06:22:31.823Z</lastmod>
-    <data>
-        <display>
-        <title>第一个博客</title>
-        <pubTime>2018-06-26T07:29:34.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wkmian.github.io/2018/09/19/jdk17-features/</loc>
     <lastmod>2018-09-22T06:23:35.714Z</lastmod>
     <data>
@@ -94,27 +79,6 @@
 
     
   <url>
-    <loc>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</loc>
-    <lastmod>2018-09-19T09:04:57.304Z</lastmod>
-    <data>
-        <display>
-        <title>log4j2使用总结</title>
-        <pubTime>2018-07-17T01:44:10.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>log</tag>
-         
-        <tag>log4j2</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://wkmian.github.io/2018/07/17/summary-of-algorithm-questions/</loc>
     <lastmod>2018-09-19T09:04:37.116Z</lastmod>
     <data>
@@ -149,25 +113,6 @@
              
               <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wkmian.github.io/2018/09/10/jdk-version-update-feature/</loc>
-    <lastmod>2018-09-19T09:03:59.744Z</lastmod>
-    <data>
-        <display>
-        <title>JDK版本更新特性</title>
-        <pubTime>2018-09-10T01:46:10.000Z</pubTime>
-        
-        <tag>java</tag>
-         
-        <tag>jdk</tag>
-         
-         
-           
         </display>
     </data>
     </url>

@@ -143,24 +143,6 @@
   </entry>
   
   <entry>
-    <title>JDK版本更新特性</title>
-    <link href="https://wkmian.github.io/2018/09/10/jdk-version-update-feature/"/>
-    <id>https://wkmian.github.io/2018/09/10/jdk-version-update-feature/</id>
-    <published>2018-09-10T01:46:10.000Z</published>
-    <updated>2018-09-19T09:03:59.744Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://wkmian.github.io/tags/java/"/>
-    
-      <category term="jdk" scheme="https://wkmian.github.io/tags/jdk/"/>
-    
-  </entry>
-  
-  <entry>
     <title>mysql</title>
     <link href="https://wkmian.github.io/2018/07/25/mysql/"/>
     <id>https://wkmian.github.io/2018/07/25/mysql/</id>
@@ -244,34 +226,6 @@
   </entry>
   
   <entry>
-    <title>log4j2使用总结</title>
-    <link href="https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/"/>
-    <id>https://wkmian.github.io/2018/07/17/summary-of-log4j2-usage/</id>
-    <published>2018-07-17T01:44:10.000Z</published>
-    <updated>2018-09-19T09:04:57.304Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="lo4j2的总结"><a href="#lo4j2的总结" class="headerlink" title="lo4j2的总结"></a>lo4j2的总结</h4><p>log4j2不同于log4j</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h4 id=&quot;lo4j2的总结&quot;&gt;&lt;a href=&quot;#lo4j2的总结&quot; class=&quot;headerlink&quot; title=&quot;lo4j2的总结&quot;&gt;&lt;/a&gt;lo4j2的总结&lt;/h4&gt;&lt;p&gt;log4j2不同于log4j&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="java" scheme="https://wkmian.github.io/tags/java/"/>
-    
-      <category term="log" scheme="https://wkmian.github.io/tags/log/"/>
-    
-      <category term="log4j2" scheme="https://wkmian.github.io/tags/log4j2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>java定时器Timer</title>
     <link href="https://wkmian.github.io/2018/07/12/java-timer/"/>
     <id>https://wkmian.github.io/2018/07/12/java-timer/</id>
@@ -318,28 +272,6 @@
     
     
       <category term="linux" scheme="https://wkmian.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一个博客</title>
-    <link href="https://wkmian.github.io/2018/06/26/first-blog/"/>
-    <id>https://wkmian.github.io/2018/06/26/first-blog/</id>
-    <published>2018-06-26T07:29:34.000Z</published>
-    <updated>2019-01-16T06:22:31.823Z</updated>
-    
-    <content type="html"><![CDATA[<p>这个是我的第一个博客 哈哈哈</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这个是我的第一个博客 哈哈哈&lt;/p&gt;
-
-      
-    
-    </summary>
-    
     
   </entry>
   
