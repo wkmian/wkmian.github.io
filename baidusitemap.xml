@@ -4,15 +4,22 @@
 
     
   <url>
-    <loc>https://wkmian.github.io/2019/01/17/single-sign-on/</loc>
-    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
+    <loc>https://wkmian.github.io/2019/06/05/singleton-mode/</loc>
+    <lastmod>2019-06-05T06:48:19.239Z</lastmod>
     <data>
         <display>
-        <title>单点登录</title>
-        <pubTime>2019-01-17T06:37:55.000Z</pubTime>
+        <title>单例模式</title>
+        <pubTime>2019-06-05T02:01:07.000Z</pubTime>
         
+        <tag>java</tag>
+         
+        <tag>设计模式</tag>
+         
          
            
+             
+              <breadCrumb title="编程" url="https://wkmian.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+          
         </display>
     </data>
     </url>
@@ -20,7 +27,7 @@
     
   <url>
     <loc>https://wkmian.github.io/2018/09/19/jdk17-features/</loc>
-    <lastmod>2018-09-22T06:23:35.714Z</lastmod>
+    <lastmod>2019-06-05T06:13:30.898Z</lastmod>
     <data>
         <display>
         <title>JDK1.7特性</title>
@@ -30,6 +37,21 @@
          
         <tag>jdk</tag>
          
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://wkmian.github.io/2019/01/17/sign-in/</loc>
+    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
+    <data>
+        <display>
+        <title>单点登录</title>
+        <pubTime>2019-01-17T06:37:55.000Z</pubTime>
+        
          
            
         </display>

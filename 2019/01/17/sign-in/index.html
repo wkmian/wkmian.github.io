@@ -22,7 +22,7 @@
 <meta name="keywords" content="java,js">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单点登录">
-<meta property="og:url" content="https://wkmian.github.io/2019/01/17/single-sign-on/index.html">
+<meta property="og:url" content="https://wkmian.github.io/2019/01/17/sign-in/index.html">
 <meta property="og:site_name" content="wkmian的博客">
 <meta property="og:description" content="更新于 2019年01月22日 这里要说的单点登录并非限制用户只在一个设备上登录的单点登录. 本次将如下介绍单点登录  概念 原理 SSO与OAuth 总结  概念随着企业的发展,用到的系统越来越多,不同模块之间的重复登录,将给用户或者运营人员带来很多不便.由此单点登录就产生了. 一个系统登录,其他系统自动登录(免登录)的技术就是单点登录. 原理在BS架构中,用户输入账号,密码取得服务器的信任,服">
 <meta property="og:locale" content="zh-CN">
@@ -34,7 +34,7 @@
 <meta name="twitter:description" content="更新于 2019年01月22日 这里要说的单点登录并非限制用户只在一个设备上登录的单点登录. 本次将如下介绍单点登录  概念 原理 SSO与OAuth 总结  概念随着企业的发展,用到的系统越来越多,不同模块之间的重复登录,将给用户或者运营人员带来很多不便.由此单点登录就产生了. 一个系统登录,其他系统自动登录(免登录)的技术就是单点登录. 原理在BS架构中,用户输入账号,密码取得服务器的信任,服">
 <meta name="twitter:image" content="https://wkmian.github.io/2019/01/17/single-sign-on/cas.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://wkmian.github.io/2019/01/17/single-sign-on/index.html">
+  <link rel="canonical" href="https://wkmian.github.io/2019/01/17/sign-in/index.html">
   
     <link rel="alternate" href="/atom.xml" title="wkmian的博客" type="application/atom+xml">
   
@@ -171,7 +171,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程规范/">编程规范</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程/">编程</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程规范/">编程规范</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -181,7 +181,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jdk/">jdk</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/二进制/">二进制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/规范/">规范</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jdk/">jdk</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/二进制/">二进制</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/规范/">规范</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -191,7 +191,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/java/" style="font-size: 14px;">java</a> <a href="/tags/jdk/" style="font-size: 13.5px;">jdk</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/mysql/" style="font-size: 13px;">mysql</a> <a href="/tags/二进制/" style="font-size: 13px;">二进制</a> <a href="/tags/算法/" style="font-size: 13.5px;">算法</a> <a href="/tags/规范/" style="font-size: 13px;">规范</a>
+      <a href="/tags/java/" style="font-size: 14px;">java</a> <a href="/tags/jdk/" style="font-size: 13.5px;">jdk</a> <a href="/tags/linux/" style="font-size: 13px;">linux</a> <a href="/tags/mysql/" style="font-size: 13px;">mysql</a> <a href="/tags/二进制/" style="font-size: 13px;">二进制</a> <a href="/tags/算法/" style="font-size: 13.5px;">算法</a> <a href="/tags/规范/" style="font-size: 13px;">规范</a> <a href="/tags/设计模式/" style="font-size: 13px;">设计模式</a>
     </div>
   </div>
 
@@ -200,7 +200,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">5</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">六月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -216,10 +216,25 @@
             
             <div class="item-inner">
               <p class="item-category">
+                <a class="category-link" href="/categories/编程/">编程</a>
+              </p>
+              <p class="item-title">
+                <a href="/2019/06/05/singleton-mode/" class="title">单例模式</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-06-05T02:01:07.000Z" itemprop="datePublished">2019-06-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
                 
               </p>
               <p class="item-title">
-                <a href="/2019/01/17/single-sign-on/" class="title">单点登录</a>
+                <a href="/2019/01/17/sign-in/" class="title">单点登录</a>
               </p>
               <p class="item-date">
                 <time datetime="2019-01-17T06:37:55.000Z" itemprop="datePublished">2019-01-17</time>
@@ -272,21 +287,6 @@
             </div>
           </li>
           
-          <li>
-            
-            <div class="item-inner">
-              <p class="item-category">
-                <a class="category-link" href="/categories/数据库/">数据库</a>
-              </p>
-              <p class="item-title">
-                <a href="/2018/07/25/mysql/" class="title">mysql</a>
-              </p>
-              <p class="item-date">
-                <time datetime="2018-07-25T07:04:11.000Z" itemprop="datePublished">2018-07-25</time>
-              </p>
-            </div>
-          </li>
-          
       </ul>
     </div>
   </div>
@@ -315,7 +315,7 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/01/17/single-sign-on/" class="article-date">
+	<a href="/2019/01/17/sign-in/" class="article-date">
 	  <time datetime="2019-01-17T06:37:55.000Z" itemprop="datePublished">2019-01-17</time>
 	</a>
 </span>
@@ -324,7 +324,7 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/01/17/single-sign-on/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/01/17/sign-in/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -410,7 +410,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://wkmian.github.io/2019/01/17/single-sign-on/" title="单点登录" target="_blank" rel="external">https://wkmian.github.io/2019/01/17/single-sign-on/</a>
+      <a href="https://wkmian.github.io/2019/01/17/sign-in/" title="单点登录" target="_blank" rel="external">https://wkmian.github.io/2019/01/17/sign-in/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -453,6 +453,10 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2019/06/05/singleton-mode/" title="单例模式"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
     <li class="next">

@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top">
   
   
-  <title>JDK1.7特性 | wkmian的博客</title>
-  <meta name="description" content="更新于 2018年9月19日 JDK 1.7 于2011-07-28发布 主要特性  访问文件系统 Switch  二进制，数字 catch多个异常 实例泛型推断 Try-with-resources Objects  Switchswitch 允许使用String类型 ####支持整数类型表示二进制12//默认0b是int类型所以需要强转byte b = byte b = (byte) 0b11">
-<meta name="keywords" content="java,jdk">
+  <title>单例模式 | wkmian的博客</title>
+  <meta name="description" content="单例模式 (Single Pattern)单例模式提供创建一个对象的方式,保证只有在一个环境下只存在一个对象实例. 懒汉式1234567891011public class Singleton &amp;#123;    private static Singleton instance;    private Singleton()&amp;#123;&amp;#125;    public static Single">
+<meta name="keywords" content="java,设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JDK1.7特性">
-<meta property="og:url" content="https://wkmian.github.io/2018/09/19/jdk17-features/index.html">
+<meta property="og:title" content="单例模式">
+<meta property="og:url" content="https://wkmian.github.io/2019/06/05/singleton-mode/index.html">
 <meta property="og:site_name" content="wkmian的博客">
-<meta property="og:description" content="更新于 2018年9月19日 JDK 1.7 于2011-07-28发布 主要特性  访问文件系统 Switch  二进制，数字 catch多个异常 实例泛型推断 Try-with-resources Objects  Switchswitch 允许使用String类型 ####支持整数类型表示二进制12//默认0b是int类型所以需要强转byte b = byte b = (byte) 0b11">
+<meta property="og:description" content="单例模式 (Single Pattern)单例模式提供创建一个对象的方式,保证只有在一个环境下只存在一个对象实例. 懒汉式1234567891011public class Singleton &amp;#123;    private static Singleton instance;    private Singleton()&amp;#123;&amp;#125;    public static Single">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-05T06:13:30.898Z">
+<meta property="og:updated_time" content="2019-06-05T06:48:19.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JDK1.7特性">
-<meta name="twitter:description" content="更新于 2018年9月19日 JDK 1.7 于2011-07-28发布 主要特性  访问文件系统 Switch  二进制，数字 catch多个异常 实例泛型推断 Try-with-resources Objects  Switchswitch 允许使用String类型 ####支持整数类型表示二进制12//默认0b是int类型所以需要强转byte b = byte b = (byte) 0b11">
+<meta name="twitter:title" content="单例模式">
+<meta name="twitter:description" content="单例模式 (Single Pattern)单例模式提供创建一个对象的方式,保证只有在一个环境下只存在一个对象实例. 懒汉式1234567891011public class Singleton &amp;#123;    private static Singleton instance;    private Singleton()&amp;#123;&amp;#125;    public static Single">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://wkmian.github.io/2018/09/19/jdk17-features/index.html">
+  <link rel="canonical" href="https://wkmian.github.io/2019/06/05/singleton-mode/index.html">
   
     <link rel="alternate" href="/atom.xml" title="wkmian的博客" type="application/atom+xml">
   
@@ -297,14 +297,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-java/JDK1-7特性" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <article id="post-设计模式/java/单例模式" class="article article-type-post" itemscope="" itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      JDK1.7特性
+      单例模式
     </h1>
   
 
@@ -312,48 +312,38 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2018/09/19/jdk17-features/" class="article-date">
-	  <time datetime="2018-09-19T10:25:15.000Z" itemprop="datePublished">2018-09-19</time>
+	<a href="/2019/06/05/singleton-mode/" class="article-date">
+	  <time datetime="2019-06-05T02:01:07.000Z" itemprop="datePublished">2019-06-05</time>
 	</a>
 </span>
         
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/编程/">编程</a>
+  </span>
+
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/java/">java</a>, <a class="article-tag-link" href="/tags/jdk/">jdk</a>
+	<a class="article-tag-link" href="/tags/java/">java</a>, <a class="article-tag-link" href="/tags/设计模式/">设计模式</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2018/09/19/jdk17-features/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/06/05/singleton-mode/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry markdown-body" itemprop="articleBody">
       
-        <p>更新于 2018年9月19日</p>
-<p>JDK 1.7 于2011-07-28发布</p>
-<p>主要特性</p>
-<ul>
-<li>访问文件系统</li>
-<li>Switch </li>
-<li>二进制，数字</li>
-<li>catch多个异常</li>
-<li>实例泛型推断</li>
-<li>Try-with-resources</li>
-<li>Objects</li>
-</ul>
-<h4 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h4><p>switch 允许使用String类型</p>
-<p>####<br>支持整数类型表示二进制<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//默认0b是int类型所以需要强转</span><br><span class="line">byte b = byte b = (byte) 0b11101001;</span><br></pre></td></tr></table></figure></p>
-<p>// 数字类型的下划线表示 仅能加载连续的数字之间<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">    long a = 1234_564_876___45654L;</span><br><span class="line">    float b = 3.14_159_26f;</span><br><span class="line"></span><br><span class="line">    //error case 错误情况</span><br><span class="line">//  long c = 123_L;</span><br><span class="line">//  float d = 3._1412926f;</span><br><span class="line">//  float e = 3_.1412926f;</span><br><span class="line">//  int f = 0x_123;</span><br><span class="line">//  int g = 0_x123;</span><br><span class="line">//  int h = 654_;</span><br><span class="line">//  int i = _654;</span><br></pre></td></tr></table></figure></p>
-<h4 id="catch-多个异常"><a href="#catch-多个异常" class="headerlink" title="catch 多个异常"></a>catch 多个异常</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">    doSomething();</span><br><span class="line">&#125; catch (IOException | SQLException ex)&#123;</span><br><span class="line">    throw ex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="实例泛型推断"><a href="#实例泛型推断" class="headerlink" title="实例泛型推断"></a>实例泛型推断</h4><p>泛型实例的创建可以通过类型推断来简化 可以去掉后面new部分的泛型类型，只用&lt;&gt;就可以了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; strList = new ArrayList&lt;&gt;();</span><br></pre></td></tr></table></figure></p>
-<h4 id="Try-with-resources-自动关闭资源"><a href="#Try-with-resources-自动关闭资源" class="headerlink" title="Try-with-resources 自动关闭资源"></a>Try-with-resources 自动关闭资源</h4><p>本质是一个语法糖，实际上还是会调用资源的close函数，所以只有实现AutoCloseable和Closeable接口的对象才会自动调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">try(BufferefReader br = new BufferedReader(new FileReader(path)))&#123;</span><br><span class="line">    return br.readLine();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h4 id="java-util-Objects"><a href="#java-util-Objects" class="headerlink" title="java.util.Objects"></a>java.util.Objects</h4><p>提供九个静态方法</p>
-<ul>
-<li>检测对象是否为空，空抛出异常<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">requireNonNull(T Object)</span><br><span class="line">requireNonNull(T Object,String message)</span><br></pre></td></tr></table></figure></li>
-</ul>
+        <h4 id="单例模式-Single-Pattern"><a href="#单例模式-Single-Pattern" class="headerlink" title="单例模式 (Single Pattern)"></a>单例模式 (Single Pattern)</h4><p>单例模式提供创建一个对象的方式,保证只有在一个环境下只存在一个对象实例.</p>
+<h4 id="懒汉式"><a href="#懒汉式" class="headerlink" title="懒汉式"></a>懒汉式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line">    private static Singleton instance;</span><br><span class="line">    private Singleton()&#123;&#125;</span><br><span class="line"></span><br><span class="line">    public static Singleton getInstance()&#123;</span><br><span class="line">        if(null == instance)&#123;</span><br><span class="line">            instance = new Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        return instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line">    private static Singleton instance;</span><br><span class="line">    private Singleton()&#123;&#125;</span><br><span class="line"></span><br><span class="line">    public static synchronized Singleton getInstance()&#123;</span><br><span class="line">        if(null == instance)&#123;</span><br><span class="line">            instance = new Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        return instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line">    private static Singleton instance = new Singleton();</span><br><span class="line">    private Singleton ()&#123;&#125;</span><br><span class="line"></span><br><span class="line">    public static Singleton getInstance() &#123;</span><br><span class="line">        return instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="双重校验锁"><a href="#双重校验锁" class="headerlink" title="双重校验锁"></a>双重校验锁</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton &#123;</span><br><span class="line">    private volatile static Singleton instance;</span><br><span class="line">    private Singleton()&#123;&#125;;</span><br><span class="line"></span><br><span class="line">    public  static Singleton getInstance()&#123;</span><br><span class="line">        if(null==instance)&#123;</span><br><span class="line">            synchrronized (Singleton.class)&#123;</span><br><span class="line">                if(null==instance)&#123;</span><br><span class="line">                    instance = new Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class Singleton&#123;</span><br><span class="line"></span><br><span class="line">    private static class SingletonHolder&#123;</span><br><span class="line">        private static final Singleton INSTANCE = new Singleton();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private Singleton()&#123;&#125;;</span><br><span class="line"></span><br><span class="line">    public static final Singleton getInstance()&#123;</span><br><span class="line">        return SingletonHolder.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h4><p>这个待定.</p>
 
       
     </div>
@@ -363,7 +353,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://wkmian.github.io/2018/09/19/jdk17-features/" title="JDK1.7特性" target="_blank" rel="external">https://wkmian.github.io/2018/09/19/jdk17-features/</a>
+      <a href="https://wkmian.github.io/2019/06/05/singleton-mode/" title="单例模式" target="_blank" rel="external">https://wkmian.github.io/2019/06/05/singleton-mode/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -407,13 +397,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2019/01/17/sign-in/" title="单点登录"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2018/09/19/java-writing-specification/" title="java编写规范"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2019/01/17/sign-in/" title="单点登录"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

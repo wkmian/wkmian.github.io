@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://wkmian.github.io/2019/01/17/single-sign-on/</loc>
+    <loc>https://wkmian.github.io/2019/06/05/singleton-mode/</loc>
     
-    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
+    <lastmod>2019-06-05T06:48:19.239Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://wkmian.github.io/2018/09/19/jdk17-features/</loc>
     
-    <lastmod>2018-09-22T06:23:35.714Z</lastmod>
+    <lastmod>2019-06-05T06:13:30.898Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://wkmian.github.io/2019/01/17/sign-in/</loc>
+    
+    <lastmod>2019-01-22T07:48:04.863Z</lastmod>
     
   </url>
   
